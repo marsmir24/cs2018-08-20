@@ -9,8 +9,19 @@ package by.it.smirnova.lesson02;
 Вывод (это должна появится в консоли, обратите внимание на пробелы и слово Sum:
 Sum = 26
 */
-class TaskC1 {
 
+import java.util.Scanner;
+
+class TaskC1 {
+    public static void main(String[] args) {
+        int a;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        int b;
+        b = sc.nextInt();
+        System.out.println("Sum" + " = " + (a + b)
+        );
+    }
 
 
 

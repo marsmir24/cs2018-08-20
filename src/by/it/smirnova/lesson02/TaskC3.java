@@ -1,5 +1,7 @@
 package by.it.smirnova.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,5 +32,38 @@ package by.it.smirnova.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int weight = in.nextInt();
+        double result = getWeight(weight);
+        System.out.println(result);
 
-}
+    }
+        public static double getWeight ( int x){
+            double z = 9.81;
+            double y = 3.86;
+            double n = y / z;
+            double a = x * n;
+            double marsweight;
+            marsweight = Math.round(a * 100.0) / 100.0;
+            return marsweight;
+            //double newDouble = new BigDecimal(a).setScale(2, RoundingMode.UP).doubleValue();
+
+            //System.out.println(marsweight);
+            //return;
+
+
+            //Scanner sc = new Scanner(System.in);
+            //  double weight;
+            // double marsweight;
+            //  weight = sc.nextInt();
+            //  double getWeight;
+            //  {
+            //     getWeight = (weight / 9.81 * 3.86);            //   marsweight = Math.round(getWeight * 100.0) / 100.0;
+
+            //System.out.println(marsweight);
+
+        }
+
+
+    }
