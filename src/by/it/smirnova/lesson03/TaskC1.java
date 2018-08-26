@@ -15,7 +15,6 @@ TC = (TF – 32) * 5/9
 Пример вывода:
 104.0
 
-
 Требования:
 1. Метод convertCelsiumToFahrenheit(int) должен быть не приватным и статическим.
 2. Метод convertCelsiumToFahrenheit должен возвращать значение типа double.
@@ -24,14 +23,24 @@ TC = (TF – 32) * 5/9
 в градусы Фаренгейта и возвращать это число.*/
 
 
+import java.util.Scanner;
+
 class TaskC1 {
 
+    public static void main(String[] args) {
+        int c;
+        Scanner sc = new Scanner(System.in);
+        c = sc.nextInt();
 
+        double result = convertCelsiumToFahrenheit( c);
 
+        System.out.println(result);
+    }
+        public static double convertCelsiumToFahrenheit(int c){
+        double f = c*9/5+32;
+        return f;
+    }
 
-
-//    public static void main(String[] args) {
-//        System.out.println(convertCelsiumToFahrenheit(40));
 //    }
 
 }
