@@ -37,7 +37,7 @@ class TaskC1 {
         System.out.println(result);
     }
         public static double convertCelsiumToFahrenheit(int c){
-        double f = c*9/5+32;
+        double f = c*9.0/5+32;
         return f;
     }
 
