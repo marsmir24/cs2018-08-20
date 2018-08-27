@@ -25,7 +25,21 @@ package by.it.smirnova.lesson04;
  */
 
 
+import javax.sql.rowset.serial.SQLOutputImpl;
+import java.util.Scanner;
 
 public class TaskB3 {
+   public static void main(String[] args){
+       int i=1;
+       int sum=1;
+       Scanner sc = new Scanner(System.in);
+       int year = sc.nextInt();
+       while(sum<=year){
+           System.out.print(sum+",");
+           i++;           sum=sum+i;
 
+       }
+
+
+}
 }

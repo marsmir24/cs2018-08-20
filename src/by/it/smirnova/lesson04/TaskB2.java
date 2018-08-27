@@ -26,13 +26,21 @@ size прочитать c клавиатуры. Числа разделить п
 3. Программа должна выводить таблицу умножения size х size.
  */
 public class TaskB2 {
-    //public static void main(String[] args) {
-      //  Scanner scaner =new Scanner(System.in);
-       // int i = scaner.nextInt(); //размер
-//        while (i>0&&i<=10,i++)
-            //if (j>0&&j<=10,j++)
-       // System.out.println(i*i+" "+);
-  //  }
-//
+    public static void main(String[] args) {
+        int i=1;
+        int a=1;
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        while (i<=size){
+            while (a<=size){
+                System.out.print(i*a+" ");
+                a++;
+            }
+            i++;
+            a=1;
+            System.out.println();
+        }
+    }
+
 }
 
