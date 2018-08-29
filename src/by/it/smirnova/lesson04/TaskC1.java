@@ -106,7 +106,7 @@ public class TaskC1 {
                         System.out.println("За месяц 14 начислено $0.0");
                         if (salary==666||salary*1.5==666){break;}
                         break;
-                
+
 
                 }
         } else System.out.println("Мы вам перезвоним!");}
