@@ -40,7 +40,7 @@ import java.util.Scanner;
 */
 public class TaskC1 {
     public static void main(String[] args) {
-        System.out.println("Какую вы хотите зарплату в $$$?");
+        //System.out.println("Какую вы хотите зарплату в $$$?");
         Scanner sc = new Scanner(System.in);
 
         double salary = sc.nextInt();
@@ -96,7 +96,7 @@ public class TaskC1 {
                         if (salary*1.5==666) {break outer;}
                         break;
                     case 12:
-                        System.out.println("За декабрь начислено $" + salary * 1.5+"\n");
+                        System.out.println("За декабрь начислено $" + salary * 1.5);
                         if (salary*1.5==666) {break outer;}
                         break;
                     case 13:
@@ -108,6 +108,6 @@ public class TaskC1 {
 
 
                 }
-        } else System.out.println("Мы вам перезвоним!");
+        } else System.out.print("Мы вам перезвоним!");
     }
 }
