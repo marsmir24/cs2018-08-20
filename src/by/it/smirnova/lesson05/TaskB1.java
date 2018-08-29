@@ -10,14 +10,25 @@ package by.it.smirnova.lesson05;
 */
 
 
+import sun.plugin.javascript.navig.Array;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TaskB1 {
-    //public static void main(String[] args) {
-    //    ArrayList<String> list=new ArrayList<>();
-    //    Scanner scanner=new Scanner(System.in);
-    //    String line = scanner.nextLine();
-     //   list.add(line);
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        //Scanner scanner = new Scanner(System.in);
+        //String line = scanner.nextLine();
+        list.add("Сиреневый");
+        list.add("туман");
+        list.add("над");
+        list.add("нами");
+        list.add("проплывает");
+        System.out.println(list.size());
 
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+    }
 }

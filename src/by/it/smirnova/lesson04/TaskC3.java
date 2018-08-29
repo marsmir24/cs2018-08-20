@@ -24,16 +24,5 @@ package by.it.smirnova.lesson04;
 */
 
 public class TaskC3 {
-   // static printInt (int i)
-   // int d=i/10
-       //     if (i<=19)
-       //         switch (i) {
-        //            case (0)
-         //           ;
-        //            return
-          //          case (0)
-          //          ;
-           //         return "one"
-          //      }
+           }
 
-}
