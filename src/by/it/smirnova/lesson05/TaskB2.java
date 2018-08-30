@@ -24,7 +24,30 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class TaskB2 {
+    public static void main(String[] args) {
+        int[] m = new int [20];
+        Scanner sc = new Scanner(System.in);
+        System.out.println(m.length);
 
+        for (int i=0; i < m.length;i++){
+            m[i] = sc.nextInt();
+        }
+        int[] a = new int[10];
+        int[] b = new int [10];
+
+        for (int i=0; i < 10; ) {
+            a[i] =m[i] ;
+            i++;
+        }
+        for (int i=10; i <20; ) {
+            b[(i-10)] = m[i];
+            i++;
+        }
+
+        System.out.println("a=" + Arrays.toString(a));
+        System.out.println("b=" + Arrays.toString(b));
+    }
 }
